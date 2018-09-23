@@ -66,7 +66,7 @@
         </div>
         <div id="extension-list">
           {% if promotions %}
-            <h3>{{ entry_featured }}</h3>
+            <h3>Featured</h3>
             <div class="row">
               {% for extension in promotions %}
                 {% if extension %}
@@ -171,7 +171,7 @@ $('#button-filter').on('click', function(e) {
 	location = url;
 });
 
-$('input[name="filter_search"]').keydown(function(e) {
+$('input[name=\'filter_search\']').keydown(function(e) {
 	if (e.keyCode == 13) {
 		e.preventDefault();
 

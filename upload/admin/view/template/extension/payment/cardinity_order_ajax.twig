@@ -44,9 +44,9 @@
 			<tr>
 			  <td>
 				  {% if refund_action %}
-				  <label class="col-form-label">{{ entry_amount }}</label>
+				  <label class="col-form-label">Amount:</label>
 				  <input id="refund-amount" text="text" name="refund_amount" value="{{ max_refund_amount }}" />
-				  <label class="col-form-label">{{ entry_description }}</label>
+				  <label class="col-form-label">Description:</label>
 				  <input id="refund-description" text="text" name="refund_description" value="" />
 				  <a class="btn btn-primary button-command" data-type="refund">{{ button_refund }}</a>
 				  {% else %}
@@ -60,7 +60,7 @@
   </tr>
 </table>
 {% else %}
-<div class="text-danger">{{ text_transaction_not_found }}</div>
+Unable to find transaction for this order.
 {% endif %}
 
 <script type="text/javascript"><!--
